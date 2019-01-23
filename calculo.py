@@ -1,5 +1,5 @@
 import math as m
-
+import sys
 
 def calculo(op, n1, n2):
     if op == 1:
@@ -15,10 +15,13 @@ def calculo(op, n1, n2):
         print('O resultado de {} / {} = {}'.format(n1, n2, round(float(n1) / float(n2), 2)))
 
     elif op == 5:
-        print('O resultado da potência de {}^{} = {}'.format(n1, n2, round(m.pow(n1, n2), 2)))
-
+       print('O resultado da base {}  no expoente {} = {}'.format(n1, n2, round(m.pow(n1, n2), 2)))
+       
     elif op == 6:
         print('O resultado do logaritmo de {} na base {} = {}'.format(n1, n2, round(m.log(n1, n2), 2)))
 
     elif op == 7:
         print('O resultado da raiz quadrada de {} = {}'.format(n1, round(m.sqrt(n1), 2)))
+
+
+
